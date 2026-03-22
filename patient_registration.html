@@ -1,0 +1,97 @@
+<body>
+  <h1 id="title">PATIENT REGISTRATION FORM</h1>
+  <p id="description">Please fill this form to open an account with us.</p>
+  <form id="patient-form">
+  <fieldset>
+  <legend><strong>Personal Information</strong></legend>
+  <label id="name-label" for="name">
+    Full name:
+    <input id="name" name="name" type="text" placeholder="e.g. John Doe" maxlength="30" minlength="5" required/>
+  </label>
+    <br>
+  <label id="email-label" for="email">
+    Email:
+    <input id="email" name="email" type="email" placeholder="e.g. johndoe@gmail.com" maxlength="30" minlength="5" required/>
+  </label>
+   <br>
+  <label id="age-label" for="age">
+    Age:
+    <input id="age" name="age" type="number" min="16" max="60" required/>
+  </label>
+    </fieldset>
+    <br>
+  <fieldset>
+   <legend><strong>Medical Information</strong></legend>
+    <label id="department-label" for ="department">Select Department:</label>
+    <select id="department" name="department" required>
+      <option value="" disabled selected>Select a department</option>
+      <option value="cardiology">Cardiology</option>
+      <option value="general-practice">General Practice</option>
+      <option value="neurology">Neurology</option>
+      <option value="obs-and-gyn">Obstetrics and Gynaecology</option>
+      <option value="ophthalmology">Ophthalmology</option>
+      <option value="orthopaedic">Orthopaedic</option>
+      <option value="paediatrics">Paediatrics</option>
+      <option value="rheumatology">Rheumatology</option>
+      <option value="surgery">Surgery</option>
+    </select>
+    </fieldset>
+  <fieldset>
+  <legend><strong>Gender</strong></legend>
+  <label>
+    <input id="female" type="radio" name="gender" value="female" required/>
+  Female</label>
+  <label>
+    <input id="male" type="radio" name="gender" value="male"/>
+    Male</label>
+     </fieldset>
+  <fieldset>
+  <legend><strong>Patient Type</strong></legend>
+  <label>
+    <input type="radio" name="patient-type" value="new-patient" required>New Patient
+  </label>
+  <label>
+    <input type="radio" name="patient-type" value="returning-patient">Returning Patient
+  </label>
+    </fieldset>
+  <fieldset>
+  <legend><strong>Symptoms</strong></legend>
+    <p>Select all symptoms that apply:</p>
+  <label>
+    <input type="checkbox" name="symptoms" value="none"/>None</label>
+  <label>
+    <input type="checkbox" name="symptoms" value="fever"/>Fever
+  </label>
+  <label>
+  <input type="checkbox" value="pain" name="symptoms"/>Pain
+  </label>
+  <label >
+  <input type="checkbox" value="rash" name="symptoms"/>Rash
+  </label>
+  <label>
+  <input type="checkbox" value="headache" name="symptoms"/>Headache
+  </label>
+  <label>
+  <input type="checkbox" value="blurred-vision" name="symptoms"/>Blurred Vision
+  </label>
+  <label>
+  <input type="checkbox" value="nausea" name="symptoms"/>Nausea
+  </label>
+  <label>
+  <input type="checkbox" value="vomiting" name="symptoms"/>Vomiting
+  </label>
+  <label>
+  <input type="checkbox" value="abdominal-pain" name="symptoms"/>Abdominal Pain
+  </label>
+  <label>
+  <input type="checkbox" value="others" name="symptoms"/>Others(write in the comment)</label>
+  </fieldset>
+  <fieldset>
+  <legend><strong>Additional Notes</strong></legend>
+  <textarea id="comments" name="comments" rows="4" cols="60" placeholder="Write any other information you wish to share here..."></textarea>
+  </fieldset>
+    <br>
+  <button type="reset">Reset Form</button>
+  <button id="submit" type="submit">Submit Form</button>
+  </form>
+</body>
